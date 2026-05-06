@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowUpRight, Sparkles, Heart, TrendingUp, ShieldCheck, Code2 } from "lucide-react";
 
 export const Route = createFileRoute("/distinguished-product")({
