@@ -66,12 +66,12 @@ function DistinguishedProduct() {
       {/* NAV */}
       <header className="relative z-30">
         <div className="mx-auto max-w-7xl px-6 py-6 flex items-center justify-between">
-          <div className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-2">
             <div className="size-8 rounded-md bg-gradient-to-br from-brand to-brand-glow flex items-center justify-center text-primary-foreground font-bold">
               S
             </div>
             <span className="text-sm tracking-[0.2em] text-muted-foreground uppercase">SDC</span>
-          </div>
+          </Link>
           <nav className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
             <a href="#products" className="hover:text-foreground transition">Products</a>
             <a href="#approach" className="hover:text-foreground transition">Approach</a>
