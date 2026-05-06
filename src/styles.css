@@ -98,7 +98,7 @@
 
 @utility bg-grid {
   background-image:
-    linear-gradient(to right, oklch(0.30 0.03 250 / 0.15) 1px, transparent 1px),
-    linear-gradient(to bottom, oklch(0.30 0.03 250 / 0.15) 1px, transparent 1px);
+    linear-gradient(to right, oklch(0.18 0.02 250 / 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, oklch(0.18 0.02 250 / 0.08) 1px, transparent 1px);
   background-size: 60px 60px;
 }
