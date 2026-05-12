@@ -7,7 +7,7 @@ export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
       { title: "Contact — SDC" },
-      { name: "description", content: "Get in touch with SDC. Email support@sdcnow.com or call +1 (408) 782-4421. Based in Texas, USA." },
+      { name: "description", content: "Get in touch with SDC. Email info@sdcnow.com or call +1 (408) 782-4421. Based in Texas, USA." },
       { property: "og:title", content: "Contact SDC" },
       { property: "og:description", content: "For further assistance, contact us." },
     ],
@@ -19,8 +19,8 @@ const channels = [
   {
     icon: Mail,
     label: "Email",
-    value: "support@sdcnow.com",
-    href: "mailto:support@sdcnow.com",
+    value: "info@sdcnow.com",
+    href: "mailto:info@sdcnow.com",
   },
   {
     icon: Phone,
@@ -100,10 +100,10 @@ function ContactPage() {
               </p>
               <div className="mt-10 flex flex-wrap items-center gap-4">
                 <a
-                  href="mailto:support@sdcnow.com"
+                  href="mailto:info@sdcnow.com"
                   className="inline-flex items-center gap-2 rounded-full bg-foreground text-background px-7 py-3.5 text-sm font-medium hover:opacity-90 transition"
                 >
-                  Email support@sdcnow.com <ArrowUpRight className="size-4" />
+                  Email info@sdcnow.com <ArrowUpRight className="size-4" />
                 </a>
                 <a
                   href="tel:+14087824421"
