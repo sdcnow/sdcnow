@@ -91,7 +91,7 @@ function DistinguishedProduct() {
             the work of experts.
           </h1>
           <p className="mt-8 max-w-2xl text-lg text-muted-foreground leading-relaxed">
-            Four products engineered on deep SAP expertise — built to address pricing,
+            Five products engineered on deep SAP expertise — built to address pricing,
             development, deductions, and connection at the level of measurable outcomes.
           </p>
           <div className="mt-12 flex flex-wrap gap-3">
@@ -118,7 +118,7 @@ function DistinguishedProduct() {
             <div>
               <div className="text-xs uppercase tracking-[0.25em] text-brand">The Suite</div>
               <h2 className="mt-4 font-display text-5xl md:text-6xl tracking-tight max-w-2xl">
-                Four products. <em className="text-muted-foreground">One discipline.</em>
+                Five products. <em className="text-muted-foreground">One discipline.</em>
               </h2>
             </div>
             <p className="max-w-md text-muted-foreground">
