@@ -9,32 +9,17 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as StrategicConsultingRouteImport } from './routes/strategic-consulting'
-import { Route as DistinguishedProductRouteImport } from './routes/distinguished-product'
-import { Route as DigitalTransformationRouteImport } from './routes/digital-transformation'
-import { Route as ContactRouteImport } from './routes/contact'
-import { Route as AgenticFrameworkRouteImport } from './routes/agentic-framework'
 import { Route as AboutRouteImport } from './routes/about'
+import { Route as AgenticFrameworkRouteImport } from './routes/agentic-framework'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as DigitalTransformationRouteImport } from './routes/digital-transformation'
+import { Route as DistinguishedProductRouteImport } from './routes/distinguished-product'
+import { Route as StrategicConsultingRouteImport } from './routes/strategic-consulting'
 import { Route as IndexRouteImport } from './routes/index'
 
-const StrategicConsultingRoute = StrategicConsultingRouteImport.update({
-  id: '/strategic-consulting',
-  path: '/strategic-consulting',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const DistinguishedProductRoute = DistinguishedProductRouteImport.update({
-  id: '/distinguished-product',
-  path: '/distinguished-product',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const DigitalTransformationRoute = DigitalTransformationRouteImport.update({
-  id: '/digital-transformation',
-  path: '/digital-transformation',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ContactRoute = ContactRouteImport.update({
-  id: '/contact',
-  path: '/contact',
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AgenticFrameworkRoute = AgenticFrameworkRouteImport.update({
@@ -42,9 +27,24 @@ const AgenticFrameworkRoute = AgenticFrameworkRouteImport.update({
   path: '/agentic-framework',
   getParentRoute: () => rootRouteImport,
 } as any)
-const AboutRoute = AboutRouteImport.update({
-  id: '/about',
-  path: '/about',
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DigitalTransformationRoute = DigitalTransformationRouteImport.update({
+  id: '/digital-transformation',
+  path: '/digital-transformation',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DistinguishedProductRoute = DistinguishedProductRouteImport.update({
+  id: '/distinguished-product',
+  path: '/distinguished-product',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const StrategicConsultingRoute = StrategicConsultingRouteImport.update({
+  id: '/strategic-consulting',
+  path: '/strategic-consulting',
   getParentRoute: () => rootRouteImport,
 } as any)
 const IndexRoute = IndexRouteImport.update({
@@ -114,41 +114,20 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
-  AgenticFrameworkRoute: typeof AgenticFrameworkRoute
-  ContactRoute: typeof ContactRoute
+  StrategicConsultingRoute: typeof StrategicConsultingRoute
   DigitalTransformationRoute: typeof DigitalTransformationRoute
   DistinguishedProductRoute: typeof DistinguishedProductRoute
-  StrategicConsultingRoute: typeof StrategicConsultingRoute
+  AgenticFrameworkRoute: typeof AgenticFrameworkRoute
+  ContactRoute: typeof ContactRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/strategic-consulting': {
-      id: '/strategic-consulting'
-      path: '/strategic-consulting'
-      fullPath: '/strategic-consulting'
-      preLoaderRoute: typeof StrategicConsultingRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/distinguished-product': {
-      id: '/distinguished-product'
-      path: '/distinguished-product'
-      fullPath: '/distinguished-product'
-      preLoaderRoute: typeof DistinguishedProductRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/digital-transformation': {
-      id: '/digital-transformation'
-      path: '/digital-transformation'
-      fullPath: '/digital-transformation'
-      preLoaderRoute: typeof DigitalTransformationRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/contact': {
-      id: '/contact'
-      path: '/contact'
-      fullPath: '/contact'
-      preLoaderRoute: typeof ContactRouteImport
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/agentic-framework': {
@@ -158,11 +137,32 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AgenticFrameworkRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/about': {
-      id: '/about'
-      path: '/about'
-      fullPath: '/about'
-      preLoaderRoute: typeof AboutRouteImport
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/digital-transformation': {
+      id: '/digital-transformation'
+      path: '/digital-transformation'
+      fullPath: '/digital-transformation'
+      preLoaderRoute: typeof DigitalTransformationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/distinguished-product': {
+      id: '/distinguished-product'
+      path: '/distinguished-product'
+      fullPath: '/distinguished-product'
+      preLoaderRoute: typeof DistinguishedProductRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/strategic-consulting': {
+      id: '/strategic-consulting'
+      path: '/strategic-consulting'
+      fullPath: '/strategic-consulting'
+      preLoaderRoute: typeof StrategicConsultingRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/': {
@@ -178,22 +178,12 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
-  AgenticFrameworkRoute: AgenticFrameworkRoute,
-  ContactRoute: ContactRoute,
+  StrategicConsultingRoute: StrategicConsultingRoute,
   DigitalTransformationRoute: DigitalTransformationRoute,
   DistinguishedProductRoute: DistinguishedProductRoute,
-  StrategicConsultingRoute: StrategicConsultingRoute,
+  AgenticFrameworkRoute: AgenticFrameworkRoute,
+  ContactRoute: ContactRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}
