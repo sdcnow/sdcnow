@@ -65,7 +65,7 @@ const products = [
     tag: "Trade Promotion Optimization",
     icon: Target,
     description:
-      "An AI-powered trade promotion optimization platform for manufacturers and CPG companies. OptiP analyzes historical promotions, pricing strategies, retailer performance, customer behavior, and trade spend to identify which campaigns truly drive profitable growth — reducing margin leakage and improving ROI across retailers, brands, and channels.",
+      "AI-powered trade promotion optimization for manufacturers and CPG. Analyzes historical promotions, pricing, and trade spend to identify what drives profitable growth — cutting margin leakage and lifting ROI.",
     metrics: [
       { k: "Promotion", v: "ROI Uplift" },
       { k: "Margin", v: "Leakage Down" },
