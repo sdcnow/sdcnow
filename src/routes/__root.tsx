@@ -76,10 +76,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "SDC delivers SAP-native strategic consulting, digital transformation, distinguished products, and agentic frameworks for modern enterprises." },
       { name: "author", content: "SDC" },
       { property: "og:title", content: "SDC — Strategic Digital Cognitive" },
-      { property: "og:description", content: "Strategy, transformation, products, and agents — engineered on deep SAP expertise." },
+      { property: "og:description", content: "SDC delivers SAP-native strategic consulting, digital transformation, distinguished products, and agentic frameworks for modern enterprises." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "SDC — Strategic Digital Cognitive" },
+      { name: "twitter:description", content: "SDC delivers SAP-native strategic consulting, digital transformation, distinguished products, and agentic frameworks for modern enterprises." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/9250e775-a78d-4a0d-9564-afcf3f2a5c1a/id-preview-a7b38bfe--9b321303-8ca1-4c3e-8118-c140a5981e5b.lovable.app-1778561795486.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/9250e775-a78d-4a0d-9564-afcf3f2a5c1a/id-preview-a7b38bfe--9b321303-8ca1-4c3e-8118-c140a5981e5b.lovable.app-1778561795486.png" },
     ],
     links: [
       {
