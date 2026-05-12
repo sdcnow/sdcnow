@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowUpRight, Sparkles, Heart, TrendingUp, ShieldCheck, Code2 } from "lucide-react";
+import { ArrowUpRight, Sparkles, Heart, TrendingUp, ShieldCheck, Code2, Target } from "lucide-react";
 import { SiteLayout } from "@/components/site-layout";
 
 export const Route = createFileRoute("/distinguished-product")({
@@ -58,6 +58,17 @@ const products = [
     metrics: [
       { k: "Ship", v: "Faster" },
       { k: "Modernize", v: "with Confidence" },
+    ],
+  },
+  {
+    name: "OptiP",
+    tag: "Trade Promotion Optimization",
+    icon: Target,
+    description:
+      "An AI-powered trade promotion optimization platform for manufacturers and CPG companies. OptiP analyzes historical promotions, pricing strategies, retailer performance, customer behavior, and trade spend to identify which campaigns truly drive profitable growth — reducing margin leakage and improving ROI across retailers, brands, and channels.",
+    metrics: [
+      { k: "Promotion", v: "ROI Uplift" },
+      { k: "Margin", v: "Leakage Down" },
     ],
   },
 ] as const;
