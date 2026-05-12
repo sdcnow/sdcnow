@@ -19,13 +19,13 @@ import { SiteLayout } from "@/components/site-layout";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "SDC Consulting — Strategic Digital Cognitive, powered by a Mixture of Experts" },
+      { title: "SDC — Strategic Digital Cognitive, powered by a Mixture of Experts" },
       {
         name: "description",
         content:
-          "SDC Consulting delivers SAP-native strategic consulting, digital transformation, distinguished products, and agentic frameworks for modern enterprises.",
+          "SDC delivers SAP-native strategic consulting, digital transformation, distinguished products, and agentic frameworks for modern enterprises.",
       },
-      { property: "og:title", content: "SDC Consulting — Strategic Digital Cognitive" },
+      { property: "og:title", content: "SDC — Strategic Digital Cognitive" },
       {
         property: "og:description",
         content: "Strategy, transformation, products, and agents — engineered on deep SAP expertise.",
@@ -221,7 +221,7 @@ function Home() {
           </div>
           <div className="md:col-span-7 space-y-8 text-lg text-muted-foreground leading-relaxed">
             <p>
-              SDC Consulting partners with leaders to translate ambition into operating reality.
+              SDC partners with leaders to translate ambition into operating reality.
               Our mixture-of-experts model brings the right specialists at the right moment of
               every engagement.
             </p>

@@ -6,9 +6,9 @@ import { PageHero } from "@/components/page-hero";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — SDC Consulting" },
-      { name: "description", content: "Get in touch with SDC Consulting. Email support@sdcnow.com or call +1 (408) 782-4421. Based in Texas, USA." },
-      { property: "og:title", content: "Contact SDC Consulting" },
+      { title: "Contact — SDC" },
+      { name: "description", content: "Get in touch with SDC. Email support@sdcnow.com or call +1 (408) 782-4421. Based in Texas, USA." },
+      { property: "og:title", content: "Contact SDC" },
       { property: "og:description", content: "For further assistance, contact us." },
     ],
   }),
@@ -45,7 +45,7 @@ function ContactPage() {
             For further assistance, <em className="text-gradient-gold not-italic">contact us</em>.
           </>
         }
-        description="Reach the SDC Consulting team for partnerships, support, or to explore how the mixture-of-experts model fits your organization."
+        description="Reach the SDC team for partnerships, support, or to explore how the mixture-of-experts model fits your organization."
       />
 
       <section className="py-24">

@@ -90,7 +90,7 @@ export function SiteFooter() {
               S
             </div>
             <span className="text-sm tracking-[0.2em] text-muted-foreground uppercase">
-              SDC Consulting
+              SDC
             </span>
           </Link>
           <p className="mt-6 max-w-sm text-sm text-muted-foreground leading-relaxed">
@@ -118,7 +118,7 @@ export function SiteFooter() {
       </div>
       <div className="border-t border-border">
         <div className="mx-auto max-w-7xl px-6 py-6 flex flex-wrap items-center justify-between gap-4 text-xs text-muted-foreground">
-          <div>© {new Date().getFullYear()} SDC Consulting. All rights reserved.</div>
+          <div>© {new Date().getFullYear()} SDC. All rights reserved.</div>
           <div className="flex flex-wrap gap-6">
             <a href="mailto:support@sdcnow.com" className="hover:text-foreground">support@sdcnow.com</a>
             <a href="tel:+14087824421" className="hover:text-foreground">+1 (408) 782-4421</a>
