@@ -9,12 +9,42 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as StrategicConsultingRouteImport } from './routes/strategic-consulting'
 import { Route as DistinguishedProductRouteImport } from './routes/distinguished-product'
+import { Route as DigitalTransformationRouteImport } from './routes/digital-transformation'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as AgenticFrameworkRouteImport } from './routes/agentic-framework'
+import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 
+const StrategicConsultingRoute = StrategicConsultingRouteImport.update({
+  id: '/strategic-consulting',
+  path: '/strategic-consulting',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const DistinguishedProductRoute = DistinguishedProductRouteImport.update({
   id: '/distinguished-product',
   path: '/distinguished-product',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DigitalTransformationRoute = DigitalTransformationRouteImport.update({
+  id: '/digital-transformation',
+  path: '/digital-transformation',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AgenticFrameworkRoute = AgenticFrameworkRouteImport.update({
+  id: '/agentic-framework',
+  path: '/agentic-framework',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
   getParentRoute: () => rootRouteImport,
 } as any)
 const IndexRoute = IndexRouteImport.update({
@@ -25,37 +55,114 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/agentic-framework': typeof AgenticFrameworkRoute
+  '/contact': typeof ContactRoute
+  '/digital-transformation': typeof DigitalTransformationRoute
   '/distinguished-product': typeof DistinguishedProductRoute
+  '/strategic-consulting': typeof StrategicConsultingRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/agentic-framework': typeof AgenticFrameworkRoute
+  '/contact': typeof ContactRoute
+  '/digital-transformation': typeof DigitalTransformationRoute
   '/distinguished-product': typeof DistinguishedProductRoute
+  '/strategic-consulting': typeof StrategicConsultingRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/agentic-framework': typeof AgenticFrameworkRoute
+  '/contact': typeof ContactRoute
+  '/digital-transformation': typeof DigitalTransformationRoute
   '/distinguished-product': typeof DistinguishedProductRoute
+  '/strategic-consulting': typeof StrategicConsultingRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/distinguished-product'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/agentic-framework'
+    | '/contact'
+    | '/digital-transformation'
+    | '/distinguished-product'
+    | '/strategic-consulting'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/distinguished-product'
-  id: '__root__' | '/' | '/distinguished-product'
+  to:
+    | '/'
+    | '/about'
+    | '/agentic-framework'
+    | '/contact'
+    | '/digital-transformation'
+    | '/distinguished-product'
+    | '/strategic-consulting'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/agentic-framework'
+    | '/contact'
+    | '/digital-transformation'
+    | '/distinguished-product'
+    | '/strategic-consulting'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
+  AgenticFrameworkRoute: typeof AgenticFrameworkRoute
+  ContactRoute: typeof ContactRoute
+  DigitalTransformationRoute: typeof DigitalTransformationRoute
   DistinguishedProductRoute: typeof DistinguishedProductRoute
+  StrategicConsultingRoute: typeof StrategicConsultingRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/strategic-consulting': {
+      id: '/strategic-consulting'
+      path: '/strategic-consulting'
+      fullPath: '/strategic-consulting'
+      preLoaderRoute: typeof StrategicConsultingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/distinguished-product': {
       id: '/distinguished-product'
       path: '/distinguished-product'
       fullPath: '/distinguished-product'
       preLoaderRoute: typeof DistinguishedProductRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/digital-transformation': {
+      id: '/digital-transformation'
+      path: '/digital-transformation'
+      fullPath: '/digital-transformation'
+      preLoaderRoute: typeof DigitalTransformationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/agentic-framework': {
+      id: '/agentic-framework'
+      path: '/agentic-framework'
+      fullPath: '/agentic-framework'
+      preLoaderRoute: typeof AgenticFrameworkRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/': {
@@ -70,7 +177,12 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  AgenticFrameworkRoute: AgenticFrameworkRoute,
+  ContactRoute: ContactRoute,
+  DigitalTransformationRoute: DigitalTransformationRoute,
   DistinguishedProductRoute: DistinguishedProductRoute,
+  StrategicConsultingRoute: StrategicConsultingRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

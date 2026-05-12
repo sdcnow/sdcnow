@@ -14,6 +14,7 @@ import {
   Beaker,
   Plane,
 } from "lucide-react";
+import { SiteLayout } from "@/components/site-layout";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -38,28 +39,28 @@ const services = [
   {
     name: "Strategic Consulting",
     icon: Compass,
-    href: "https://sdcnow.com/strategic-consulting",
+    to: "/strategic-consulting" as const,
     description:
       "We align business strategy with SAP S/4HANA and BTP to drive transformation — enabling efficient, scalable operations with reduced risk and data-driven decisions.",
   },
   {
     name: "Digital Transformation",
     icon: Layers,
-    href: "https://sdcnow.com/digital-transformation/",
+    to: "/digital-transformation" as const,
     description:
       "We deliver digital transformation by optimizing operations, enabling data-driven insights, ensuring seamless system integration and empowering long-term growth.",
   },
   {
     name: "Distinguished Product",
     icon: Boxes,
-    to: "/distinguished-product",
+    to: "/distinguished-product" as const,
     description:
       "Our intelligent solutions optimize pricing, streamline development, and improve financial operations. Powered by SAP expertise — efficient, scalable, measurable.",
   },
   {
     name: "Agentic Framework",
     icon: Bot,
-    href: "https://sdcnow.com/agentic-framework",
+    to: "/agentic-framework" as const,
     description:
       "Our Agentic Framework brings intelligent automation through agents that act and adapt in real time — efficient, scalable operations through advanced analytics.",
   },
@@ -77,39 +78,7 @@ const industries = [
 
 function Home() {
   return (
-    <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet"
-      />
-
-      {/* NAV */}
-      <header className="relative z-30">
-        <div className="mx-auto max-w-7xl px-6 py-6 flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-2">
-            <div className="size-8 rounded-md bg-gradient-to-br from-brand to-brand-glow flex items-center justify-center text-primary-foreground font-bold">
-              S
-            </div>
-            <span className="text-sm tracking-[0.2em] text-muted-foreground uppercase">SDC</span>
-          </Link>
-          <nav className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
-            <a href="#services" className="hover:text-foreground transition">Services</a>
-            <a href="#industries" className="hover:text-foreground transition">Industries</a>
-            <Link to="/distinguished-product" className="hover:text-foreground transition">
-              Distinguished Products
-            </Link>
-            <a href="#contact" className="hover:text-foreground transition">Contact</a>
-          </nav>
-          <a
-            href="#contact"
-            className="inline-flex items-center gap-2 rounded-full bg-foreground text-background px-5 py-2.5 text-sm font-medium hover:opacity-90 transition"
-          >
-            Get Support <ArrowUpRight className="size-4" />
-          </a>
-        </div>
-      </header>
-
+    <SiteLayout>
       {/* HERO */}
       <section className="relative">
         <div className="absolute inset-0 bg-grid opacity-40 [mask-image:radial-gradient(ellipse_at_center,black,transparent_70%)]" />
@@ -141,12 +110,12 @@ function Home() {
             >
               What we do best <ArrowUpRight className="size-4" />
             </a>
-            <a
-              href="#contact"
+            <Link
+              to="/contact"
               className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/60 backdrop-blur px-7 py-3.5 font-medium hover:bg-surface transition"
             >
               Get Support
-            </a>
+            </Link>
           </div>
 
           <div className="mt-24 grid grid-cols-2 md:grid-cols-4 gap-px bg-border rounded-2xl overflow-hidden border border-border">
@@ -184,8 +153,13 @@ function Home() {
           <div className="grid gap-6 md:grid-cols-2">
             {services.map((s, i) => {
               const Icon = s.icon;
-              const inner = (
-                <>
+              return (
+                <Link
+                  key={s.name}
+                  to={s.to}
+                  className="group relative block rounded-3xl border border-border p-8 md:p-10 overflow-hidden hover:border-brand/40 transition-all duration-500"
+                  style={{ background: "var(--gradient-card)", boxShadow: "var(--shadow-card)" }}
+                >
                   <div className="absolute top-8 right-8 font-display text-6xl text-muted-foreground/20">
                     0{i + 1}
                   </div>
@@ -204,31 +178,7 @@ function Home() {
                     Read more →
                   </div>
                   <div className="absolute -bottom-32 -right-32 size-64 rounded-full bg-brand/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
-                </>
-              );
-
-              const className =
-                "group relative block rounded-3xl border border-border p-8 md:p-10 overflow-hidden hover:border-brand/40 transition-all duration-500";
-              const style = {
-                background: "var(--gradient-card)",
-                boxShadow: "var(--shadow-card)",
-              } as const;
-
-              return s.to ? (
-                <Link key={s.name} to={s.to} className={className} style={style}>
-                  {inner}
                 </Link>
-              ) : (
-                <a
-                  key={s.name}
-                  href={s.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={className}
-                  style={style}
-                >
-                  {inner}
-                </a>
               );
             })}
           </div>
@@ -282,7 +232,7 @@ function Home() {
         </div>
       </section>
 
-      {/* CONTACT */}
+      {/* CONTACT CTA */}
       <section id="contact" className="relative py-32 border-t border-border">
         <div className="mx-auto max-w-7xl px-6">
           <div
@@ -295,34 +245,23 @@ function Home() {
                 Let&rsquo;s build the <em className="text-gradient-gold not-italic">distinguished</em> version of your operation.
               </h2>
               <div className="mt-12 flex flex-wrap items-center gap-8 text-sm">
-                <a
-                  href="mailto:support@sdcnow.com"
+                <Link
+                  to="/contact"
                   className="inline-flex items-center gap-2 rounded-full bg-foreground text-background px-7 py-3.5 font-medium hover:opacity-90 transition"
                 >
-                  support@sdcnow.com <ArrowUpRight className="size-4" />
+                  Get in touch <ArrowUpRight className="size-4" />
+                </Link>
+                <a href="mailto:support@sdcnow.com" className="text-muted-foreground hover:text-foreground transition">
+                  support@sdcnow.com
                 </a>
                 <a href="tel:+14087824421" className="text-muted-foreground hover:text-foreground transition">
                   +1 (408) 782-4421
                 </a>
-                <span className="text-muted-foreground">Texas, USA</span>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-      <footer className="border-t border-border">
-        <div className="mx-auto max-w-7xl px-6 py-10 flex flex-wrap items-center justify-between gap-4 text-sm text-muted-foreground">
-          <div>© {new Date().getFullYear()} SDC Consulting</div>
-          <div className="flex gap-6">
-            <a href="#services" className="hover:text-foreground">Services</a>
-            <Link to="/distinguished-product" className="hover:text-foreground">
-              Distinguished Products
-            </Link>
-            <a href="#contact" className="hover:text-foreground">Contact</a>
-          </div>
-        </div>
-      </footer>
-    </div>
+    </SiteLayout>
   );
 }
