@@ -6,10 +6,10 @@ import { PageHero } from "@/components/page-hero";
 export const Route = createFileRoute("/digital-transformation")({
   head: () => ({
     meta: [
-      { title: "Digital Transformation — SDC Consulting" },
-      { name: "description", content: "Optimize processes, unlock insights, and integrate systems. SDC Consulting accelerates digital transformation with SAP-native expertise." },
-      { property: "og:title", content: "Digital Transformation — SDC Consulting" },
-      { property: "og:description", content: "Redefine how your business operates with SDC Consulting's transformation practice." },
+      { title: "Digital Transformation — SDC" },
+      { name: "description", content: "Optimize processes, unlock insights, and integrate systems. SDC accelerates digital transformation with SAP-native expertise." },
+      { property: "og:title", content: "Digital Transformation — SDC" },
+      { property: "og:description", content: "Redefine how your business operates with SDC's transformation practice." },
     ],
   }),
   component: DigitalTransformation,

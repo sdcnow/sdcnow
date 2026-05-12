@@ -6,9 +6,9 @@ import { PageHero } from "@/components/page-hero";
 export const Route = createFileRoute("/strategic-consulting")({
   head: () => ({
     meta: [
-      { title: "Strategic Consulting — SDC Consulting" },
-      { name: "description", content: "Align business strategy with SAP S/4HANA and BTP. SDC Consulting delivers structured planning that reduces risk and unlocks measurable value." },
-      { property: "og:title", content: "Strategic Consulting — SDC Consulting" },
+      { title: "Strategic Consulting — SDC" },
+      { name: "description", content: "Align business strategy with SAP S/4HANA and BTP. SDC delivers structured planning that reduces risk and unlocks measurable value." },
+      { property: "og:title", content: "Strategic Consulting — SDC" },
       { property: "og:description", content: "Bridging the gap between business strategy and SAP technology." },
     ],
   }),

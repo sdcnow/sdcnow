@@ -6,9 +6,9 @@ import { PageHero } from "@/components/page-hero";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About — SDC Consulting" },
-      { name: "description", content: "SDC Consulting brings together a mixture of experts to deliver SAP-native strategy, transformation, and intelligent products." },
-      { property: "og:title", content: "About SDC Consulting" },
+      { title: "About — SDC" },
+      { name: "description", content: "SDC brings together a mixture of experts to deliver SAP-native strategy, transformation, and intelligent products." },
+      { property: "og:title", content: "About SDC" },
       { property: "og:description", content: "Mission, expertise, and commitment behind the SDC mixture-of-experts model." },
     ],
   }),
@@ -43,7 +43,7 @@ function AboutPage() {
             Built by experts, for <em className="text-gradient-gold not-italic">operating leaders</em>.
           </>
         }
-        description="SDC Consulting is a Texas-based SAP-native consultancy. We help enterprises align strategy with execution — across S/4HANA transformation, digital operations, and AI-driven products."
+        description="SDC is a Texas-based SAP-native consultancy. We help enterprises align strategy with execution — across S/4HANA transformation, digital operations, and AI-driven products."
       />
 
       <section className="relative py-24">

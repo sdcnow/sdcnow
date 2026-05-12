@@ -5,9 +5,9 @@ import { SiteLayout } from "@/components/site-layout";
 export const Route = createFileRoute("/distinguished-product")({
   head: () => ({
     meta: [
-      { title: "Distinguished Products — SDC Consulting" },
-      { name: "description", content: "Flutrr, YieldS, DeductO, and DevP — AI-native SAP products built by SDC Consulting." },
-      { property: "og:title", content: "Distinguished Products — SDC Consulting" },
+      { title: "Distinguished Products — SDC" },
+      { name: "description", content: "Flutrr, YieldS, DeductO, and DevP — AI-native SAP products built by SDC." },
+      { property: "og:title", content: "Distinguished Products — SDC" },
       { property: "og:description", content: "AI-native products engineered for SAP — pricing intelligence, deduction adjudication, and developer acceleration." },
     ],
   }),
@@ -170,7 +170,7 @@ function DistinguishedProduct() {
           </div>
           <div className="md:col-span-7 space-y-8 text-lg text-muted-foreground leading-relaxed">
             <p>
-              SDC Consulting offers innovative solutions designed to address critical business
+              SDC offers innovative solutions designed to address critical business
               challenges across pricing, development, and financial operations. Built on deep
               SAP expertise, these solutions integrate seamlessly into your existing landscape.
             </p>

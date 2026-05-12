@@ -6,9 +6,9 @@ import { PageHero } from "@/components/page-hero";
 export const Route = createFileRoute("/agentic-framework")({
   head: () => ({
     meta: [
-      { title: "Agentic Framework — SDC Consulting" },
-      { name: "description", content: "AI-driven agents that analyze, decide, and execute across your SAP landscape. SDC Consulting's Agentic Framework brings autonomy into operations." },
-      { property: "og:title", content: "Agentic Framework — SDC Consulting" },
+      { title: "Agentic Framework — SDC" },
+      { name: "description", content: "AI-driven agents that analyze, decide, and execute across your SAP landscape. SDC's Agentic Framework brings autonomy into operations." },
+      { property: "og:title", content: "Agentic Framework — SDC" },
       { property: "og:description", content: "Intelligent, autonomous operations across your business." },
     ],
   }),
@@ -32,7 +32,7 @@ function AgenticFramework() {
             Intelligent, autonomous <em className="text-gradient-gold not-italic">operations</em>.
           </>
         }
-        description="SDC Consulting's Agentic Framework enables intelligent, autonomous operations across your business. AI-driven agents analyze data, make decisions, and execute tasks — proactively and efficiently."
+        description="SDC's Agentic Framework enables intelligent, autonomous operations across your business. AI-driven agents analyze data, make decisions, and execute tasks — proactively and efficiently."
       />
 
       <section className="py-24">
