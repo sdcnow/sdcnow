@@ -120,7 +120,7 @@ export function SiteFooter() {
         <div className="mx-auto max-w-7xl px-6 py-6 flex flex-wrap items-center justify-between gap-4 text-xs text-muted-foreground">
           <div>© {new Date().getFullYear()} SDC. All rights reserved.</div>
           <div className="flex flex-wrap gap-6">
-            <a href="mailto:support@sdcnow.com" className="hover:text-foreground">support@sdcnow.com</a>
+            <a href="mailto:info@sdcnow.com" className="hover:text-foreground">info@sdcnow.com</a>
             <a href="tel:+14087824421" className="hover:text-foreground">+1 (408) 782-4421</a>
             <span>Texas, USA</span>
           </div>

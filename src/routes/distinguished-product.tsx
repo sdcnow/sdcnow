@@ -206,7 +206,7 @@ function DistinguishedProduct() {
                 <Link to="/contact" className="inline-flex items-center gap-2 rounded-full bg-foreground text-background px-7 py-3.5 font-medium hover:opacity-90 transition">
                   Get in touch <ArrowUpRight className="size-4" />
                 </Link>
-                <a href="mailto:support@sdcnow.com" className="text-muted-foreground hover:text-foreground transition">support@sdcnow.com</a>
+                <a href="mailto:info@sdcnow.com" className="text-muted-foreground hover:text-foreground transition">info@sdcnow.com</a>
               </div>
             </div>
           </div>

@@ -251,8 +251,8 @@ function Home() {
                 >
                   Get in touch <ArrowUpRight className="size-4" />
                 </Link>
-                <a href="mailto:support@sdcnow.com" className="text-muted-foreground hover:text-foreground transition">
-                  support@sdcnow.com
+                <a href="mailto:info@sdcnow.com" className="text-muted-foreground hover:text-foreground transition">
+                  info@sdcnow.com
                 </a>
                 <a href="tel:+14087824421" className="text-muted-foreground hover:text-foreground transition">
                   +1 (408) 782-4421
