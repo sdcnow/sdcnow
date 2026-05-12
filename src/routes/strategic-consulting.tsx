@@ -32,7 +32,7 @@ function StrategicConsulting() {
             Bridge strategy and <em className="text-gradient-gold not-italic">SAP execution</em>.
           </>
         }
-        description="We work closely with stakeholders to align operational goals with S/4HANA transformation and BTP innovation. Through deep analysis and structured planning, we identify opportunities to improve efficiency and unlock value."
+        description="We collaborate closely with business and technology stakeholders to align enterprise operations with strategic S/4HANA transformation and SAP BTP innovation initiatives. Through rigorous analysis, structured planning, and a value-driven approach, we identify opportunities to optimize processes, enhance operational agility, and accelerate digital transformation while delivering scalable, measurable business outcomes across the enterprise."
       />
 
       <section className="py-24">
