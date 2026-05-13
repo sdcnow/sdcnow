@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowUpRight, Menu, X } from "lucide-react";
 import { useState } from "react";
+import sdcLogo from "@/assets/sdc-logo.png";
 
 const navLinks = [
   { to: "/", label: "Home" },
@@ -23,10 +24,7 @@ export function SiteHeader() {
       />
       <div className="mx-auto max-w-7xl px-6 py-6 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
-          <div className="size-8 rounded-md bg-gradient-to-br from-brand to-brand-glow flex items-center justify-center text-primary-foreground font-bold">
-            S
-          </div>
-          <span className="text-sm tracking-[0.2em] text-muted-foreground uppercase">SDC</span>
+          <img src={sdcLogo} alt="SDC — Strategic Digital Cognitive" className="h-12 w-auto" />
         </Link>
         <nav className="hidden lg:flex items-center gap-6 text-sm text-muted-foreground">
           {navLinks.slice(1, -1).map((l) => (
@@ -86,12 +84,7 @@ export function SiteFooter() {
       <div className="mx-auto max-w-7xl px-6 py-16 grid gap-12 md:grid-cols-4">
         <div className="md:col-span-2">
           <Link to="/" className="flex items-center gap-2">
-            <div className="size-8 rounded-md bg-gradient-to-br from-brand to-brand-glow flex items-center justify-center text-primary-foreground font-bold">
-              S
-            </div>
-            <span className="text-sm tracking-[0.2em] text-muted-foreground uppercase">
-              SDC
-            </span>
+            <img src={sdcLogo} alt="SDC — Strategic Digital Cognitive" className="h-14 w-auto" />
           </Link>
           <p className="mt-6 max-w-sm text-sm text-muted-foreground leading-relaxed">
             Strategic Digital Cognitive — powered by a mixture of experts. SAP-native solutions,
