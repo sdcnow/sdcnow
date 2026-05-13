@@ -1,6 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowUpRight, Sparkles, Heart, TrendingUp, ShieldCheck, Code2, Target, Gift } from "lucide-react";
 import { SiteLayout } from "@/components/site-layout";
+import yieldsLogo from "@/assets/yields-logo.png";
+import deductoLogo from "@/assets/deducto-logo.png";
+import optipLogo from "@/assets/optip-logo.png";
+import loyalyLogo from "@/assets/loyaly-logo.png";
 
 export const Route = createFileRoute("/distinguished-product")({
   head: () => ({
