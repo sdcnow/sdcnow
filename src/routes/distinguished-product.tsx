@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowUpRight, Sparkles, Heart, TrendingUp, ShieldCheck, Code2, Target } from "lucide-react";
+import { ArrowUpRight, Sparkles, Heart, TrendingUp, ShieldCheck, Code2, Target, Gift } from "lucide-react";
 import { SiteLayout } from "@/components/site-layout";
 
 export const Route = createFileRoute("/distinguished-product")({
@@ -71,6 +71,17 @@ const products = [
       { k: "Margin", v: "Leakage Down" },
     ],
   },
+  {
+    name: "LoyalY",
+    tag: "AI Loyalty Management",
+    icon: Gift,
+    description:
+      "AI-powered loyalty platform that helps brands build deeper customer relationships through personalized rewards, intelligent engagement, and data-driven insights — lifting repeat purchases, customer lifetime value, and long-term brand loyalty.",
+    metrics: [
+      { k: "Repeat", v: "Purchase Lift" },
+      { k: "Lifetime", v: "Value Up" },
+    ],
+  },
 ] as const;
 
 function DistinguishedProduct() {
@@ -91,7 +102,7 @@ function DistinguishedProduct() {
             the work of experts.
           </h1>
           <p className="mt-8 max-w-2xl text-lg text-muted-foreground leading-relaxed">
-            Five products engineered on deep enterprise expertise — built to address pricing,
+            Six products engineered on deep enterprise expertise — built to address pricing,
             development, deductions, and connection at the level of measurable outcomes.
           </p>
           <div className="mt-12 flex flex-wrap gap-3">
@@ -118,7 +129,7 @@ function DistinguishedProduct() {
             <div>
               <div className="text-xs uppercase tracking-[0.25em] text-brand">The Suite</div>
               <h2 className="mt-4 font-display text-5xl md:text-6xl tracking-tight max-w-2xl">
-                Five products. <em className="text-muted-foreground">One discipline.</em>
+                Six products. <em className="text-muted-foreground">One discipline.</em>
               </h2>
             </div>
             <p className="max-w-md text-muted-foreground">
