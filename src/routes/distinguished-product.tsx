@@ -1,6 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowUpRight, Sparkles, Heart, TrendingUp, ShieldCheck, Code2, Target, Gift } from "lucide-react";
 import { SiteLayout } from "@/components/site-layout";
+import yieldsLogo from "@/assets/yields-logo.png";
+import deductoLogo from "@/assets/deducto-logo.png";
+import optipLogo from "@/assets/optip-logo.png";
+import loyalyLogo from "@/assets/loyaly-logo.png";
 
 export const Route = createFileRoute("/distinguished-product")({
   head: () => ({
@@ -31,6 +35,7 @@ const products = [
     name: "YieldS",
     tag: "Pricing Intelligence",
     icon: TrendingUp,
+    logo: yieldsLogo,
     description:
       "Analyzes pricing data across business processes to uncover what truly drives profitability. Identifies winning strategies, flags revenue leakage, surfaces highest-yield models.",
     metrics: [
@@ -42,6 +47,7 @@ const products = [
     name: "DeductO",
     tag: "Trade Deduction AI",
     icon: ShieldCheck,
+    logo: deductoLogo,
     description:
       "Turns trade deduction chaos into instant decisions. Connects to SAP TPM, OTC, FI-AR, and content repositories — validates every claim and posts the audited result back to SAP.",
     metrics: [
@@ -64,6 +70,7 @@ const products = [
     name: "OptiP",
     tag: "Trade Promotion Optimization",
     icon: Target,
+    logo: optipLogo,
     description:
       "AI-powered trade promotion optimization for manufacturers and CPG. Analyzes historical promotions, pricing, and trade spend to identify what drives profitable growth — cutting margin leakage and lifting ROI.",
     metrics: [
@@ -75,6 +82,7 @@ const products = [
     name: "LoyalY",
     tag: "AI Loyalty Management",
     icon: Gift,
+    logo: loyalyLogo,
     description:
       "AI-powered loyalty platform that helps brands build deeper customer relationships through personalized rewards, intelligent engagement, and data-driven insights — lifting repeat purchases, customer lifetime value, and long-term brand loyalty.",
     metrics: [
@@ -154,14 +162,20 @@ function DistinguishedProduct() {
                     <Icon className="size-4 text-brand" />
                     {p.tag}
                   </div>
-                  <h3 className="mt-6 font-display text-5xl md:text-6xl tracking-tight">
-                    {"href" in p && p.href ? (
+                  <h3 className="mt-6 font-display text-5xl md:text-6xl tracking-tight flex items-center gap-4 flex-wrap">
+                    {"logo" in p && p.logo ? (
+                      <img
+                        src={p.logo}
+                        alt={`${p.name} logo`}
+                        className="h-12 md:h-14 w-auto rounded-md bg-white/95 px-2 py-1 object-contain"
+                      />
+                    ) : "href" in p && p.href ? (
                       <a href={p.href} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 hover:text-gradient-gold transition">
                         {p.name}
                         <ArrowUpRight className="size-7 opacity-40 group-hover:opacity-100 transition" />
                       </a>
                     ) : (
-                      p.name
+                      <span>{p.name}</span>
                     )}
                   </h3>
                   <p className="mt-5 text-muted-foreground leading-relaxed max-w-lg">{p.description}</p>
