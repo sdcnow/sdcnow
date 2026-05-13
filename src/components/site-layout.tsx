@@ -24,10 +24,7 @@ export function SiteHeader() {
       />
       <div className="mx-auto max-w-7xl px-6 py-6 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
-          <div className="size-8 rounded-md bg-gradient-to-br from-brand to-brand-glow flex items-center justify-center text-primary-foreground font-bold">
-            S
-          </div>
-          <span className="text-sm tracking-[0.2em] text-muted-foreground uppercase">SDC</span>
+          <img src={sdcLogo} alt="SDC — Strategic Digital Cognitive" className="h-12 w-auto" />
         </Link>
         <nav className="hidden lg:flex items-center gap-6 text-sm text-muted-foreground">
           {navLinks.slice(1, -1).map((l) => (
