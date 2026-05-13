@@ -162,14 +162,20 @@ function DistinguishedProduct() {
                     <Icon className="size-4 text-brand" />
                     {p.tag}
                   </div>
-                  <h3 className="mt-6 font-display text-5xl md:text-6xl tracking-tight">
-                    {"href" in p && p.href ? (
+                  <h3 className="mt-6 font-display text-5xl md:text-6xl tracking-tight flex items-center gap-4 flex-wrap">
+                    {"logo" in p && p.logo ? (
+                      <img
+                        src={p.logo}
+                        alt={`${p.name} logo`}
+                        className="h-12 md:h-14 w-auto rounded-md bg-white/95 px-2 py-1 object-contain"
+                      />
+                    ) : "href" in p && p.href ? (
                       <a href={p.href} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 hover:text-gradient-gold transition">
                         {p.name}
                         <ArrowUpRight className="size-7 opacity-40 group-hover:opacity-100 transition" />
                       </a>
                     ) : (
-                      p.name
+                      <span>{p.name}</span>
                     )}
                   </h3>
                   <p className="mt-5 text-muted-foreground leading-relaxed max-w-lg">{p.description}</p>
