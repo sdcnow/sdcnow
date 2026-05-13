@@ -69,7 +69,8 @@ const services = [
 const industries = [
   { name: "Wholesale & Distribution", icon: Truck },
   { name: "Life Science", icon: FlaskConical },
-  { name: "Retail & Consumer Goods", icon: ShoppingBag },
+  { name: "Retail", icon: ShoppingBag },
+  { name: "Consumer Goods", icon: ShoppingBag },
   { name: "Manufacturing", icon: Factory },
   { name: "High Tech", icon: Cpu },
   { name: "Chemical", icon: Beaker },
