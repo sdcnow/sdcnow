@@ -35,6 +35,7 @@ const products = [
     name: "YieldS",
     tag: "Pricing Intelligence",
     icon: TrendingUp,
+    logo: yieldsLogo,
     description:
       "Analyzes pricing data across business processes to uncover what truly drives profitability. Identifies winning strategies, flags revenue leakage, surfaces highest-yield models.",
     metrics: [
@@ -46,6 +47,7 @@ const products = [
     name: "DeductO",
     tag: "Trade Deduction AI",
     icon: ShieldCheck,
+    logo: deductoLogo,
     description:
       "Turns trade deduction chaos into instant decisions. Connects to SAP TPM, OTC, FI-AR, and content repositories — validates every claim and posts the audited result back to SAP.",
     metrics: [
@@ -68,6 +70,7 @@ const products = [
     name: "OptiP",
     tag: "Trade Promotion Optimization",
     icon: Target,
+    logo: optipLogo,
     description:
       "AI-powered trade promotion optimization for manufacturers and CPG. Analyzes historical promotions, pricing, and trade spend to identify what drives profitable growth — cutting margin leakage and lifting ROI.",
     metrics: [
@@ -79,6 +82,7 @@ const products = [
     name: "LoyalY",
     tag: "AI Loyalty Management",
     icon: Gift,
+    logo: loyalyLogo,
     description:
       "AI-powered loyalty platform that helps brands build deeper customer relationships through personalized rewards, intelligent engagement, and data-driven insights — lifting repeat purchases, customer lifetime value, and long-term brand loyalty.",
     metrics: [
