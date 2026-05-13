@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowUpRight, Menu, X } from "lucide-react";
 import { useState } from "react";
+import sdcLogo from "@/assets/sdc-logo.png";
 
 const navLinks = [
   { to: "/", label: "Home" },
