@@ -26,7 +26,7 @@ const products = [
     icon: Megaphone,
     logo: promoqLogo,
     description:
-      "A lightweight Trade Promotion Management solution that helps manufacturers create, manage, and execute promotions from a single workspace — simplifying planning, improving team coordination, and bringing visibility to trade activities for faster, more efficient execution.",
+      "Lightweight Trade Promotion Management for manufacturers — plan, manage, and execute promotions from a single workspace with better team coordination and visibility.",
     metrics: [
       { k: "Unified", v: "Workspace" },
       { k: "Faster", v: "Execution" },
