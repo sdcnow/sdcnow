@@ -21,15 +21,15 @@ export const Route = createFileRoute("/distinguished-product")({
 
 const products = [
   {
-    name: "Flutrr",
-    tag: "Connection Intelligence",
-    icon: Heart,
-    href: "https://www.flutrr.com/",
+    name: "PromoQ",
+    tag: "Win the Shelf Battle",
+    icon: Megaphone,
+    logo: promoqLogo,
     description:
-      "A modern dating platform that redefines how meaningful connections are built. Intelligent matchmaking, verified profiles, and design that prioritizes trust and intent.",
+      "A lightweight Trade Promotion Management solution that helps manufacturers create, manage, and execute promotions from a single workspace — simplifying planning, improving team coordination, and bringing visibility to trade activities for faster, more efficient execution.",
     metrics: [
-      { k: "Verified", v: "Profiles" },
-      { k: "Intent-led", v: "Matching" },
+      { k: "Unified", v: "Workspace" },
+      { k: "Faster", v: "Execution" },
     ],
   },
   {
