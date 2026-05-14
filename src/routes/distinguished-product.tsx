@@ -171,7 +171,7 @@ function DistinguishedProduct() {
                         className="h-12 md:h-14 w-auto rounded-md bg-white/95 px-2 py-1 object-contain"
                       />
                     ) : "href" in p && p.href ? (
-                      <a href={p.href} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 hover:text-gradient-gold transition">
+                      <a href={p.href as string} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 hover:text-gradient-gold transition">
                         {p.name}
                         <ArrowUpRight className="size-7 opacity-40 group-hover:opacity-100 transition" />
                       </a>
