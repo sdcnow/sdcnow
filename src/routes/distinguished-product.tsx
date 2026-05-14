@@ -1,10 +1,11 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowUpRight, Sparkles, Heart, TrendingUp, ShieldCheck, Code2, Target, Gift } from "lucide-react";
+import { ArrowUpRight, Sparkles, Megaphone, TrendingUp, ShieldCheck, Code2, Target, Gift } from "lucide-react";
 import { SiteLayout } from "@/components/site-layout";
 import yieldsLogo from "@/assets/yields-logo.png";
 import deductoLogo from "@/assets/deducto-logo.png";
 import optipLogo from "@/assets/optip-logo.png";
 import loyalyLogo from "@/assets/loyaly-logo.png";
+import promoqLogo from "@/assets/promoq-logo.png";
 
 export const Route = createFileRoute("/distinguished-product")({
   head: () => ({
@@ -20,15 +21,15 @@ export const Route = createFileRoute("/distinguished-product")({
 
 const products = [
   {
-    name: "Flutrr",
-    tag: "Connection Intelligence",
-    icon: Heart,
-    href: "https://www.flutrr.com/",
+    name: "PromoQ",
+    tag: "Win the Shelf Battle",
+    icon: Megaphone,
+    logo: promoqLogo,
     description:
-      "A modern dating platform that redefines how meaningful connections are built. Intelligent matchmaking, verified profiles, and design that prioritizes trust and intent.",
+      "A lightweight Trade Promotion Management solution that helps manufacturers create, manage, and execute promotions from a single workspace — simplifying planning, improving team coordination, and bringing visibility to trade activities for faster, more efficient execution.",
     metrics: [
-      { k: "Verified", v: "Profiles" },
-      { k: "Intent-led", v: "Matching" },
+      { k: "Unified", v: "Workspace" },
+      { k: "Faster", v: "Execution" },
     ],
   },
   {
@@ -170,7 +171,7 @@ function DistinguishedProduct() {
                         className="h-12 md:h-14 w-auto rounded-md bg-white/95 px-2 py-1 object-contain"
                       />
                     ) : "href" in p && p.href ? (
-                      <a href={p.href} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 hover:text-gradient-gold transition">
+                      <a href={p.href as string} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 hover:text-gradient-gold transition">
                         {p.name}
                         <ArrowUpRight className="size-7 opacity-40 group-hover:opacity-100 transition" />
                       </a>
