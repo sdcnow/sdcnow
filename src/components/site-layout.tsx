@@ -24,7 +24,7 @@ export function SiteHeader() {
       />
       <div className="mx-auto max-w-7xl px-6 py-6 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
-          <img src={sdcLogo} alt="SDC — Strategic Digital Cognitive" className="h-12 w-auto" />
+          <img src={sdcLogo} alt="SDC — Strategic Digital Cognitive" className="h-16 md:h-20 w-auto" />
         </Link>
         <nav className="hidden lg:flex items-center gap-6 text-sm text-muted-foreground">
           {navLinks.slice(1, -1).map((l) => (
