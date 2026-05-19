@@ -168,7 +168,7 @@ function DistinguishedProduct() {
                       <img
                         src={p.logo}
                         alt={`${p.name} logo`}
-                        className="h-12 md:h-14 w-auto rounded-md bg-white/95 px-2 py-1 object-contain"
+                        className="h-20 md:h-28 w-auto object-contain"
                       />
                     ) : "href" in p && p.href ? (
                       <a href={p.href as string} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 hover:text-gradient-gold transition">
