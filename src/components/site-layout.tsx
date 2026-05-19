@@ -24,7 +24,7 @@ export function SiteHeader() {
       />
       <div className="mx-auto max-w-7xl px-6 py-6 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
-          <img src={sdcLogo} alt="SDC — Strategic Digital Cognitive" className="h-24 md:h-32 w-auto" />
+          <img src={sdcLogo} alt="SDC — Strategic Digital Cognitive" className="h-32 md:h-44 w-auto" />
         </Link>
         <nav className="hidden lg:flex items-center gap-6 text-sm text-muted-foreground">
           {navLinks.slice(1, -1).map((l) => (
@@ -84,7 +84,7 @@ export function SiteFooter() {
       <div className="mx-auto max-w-7xl px-6 py-16 grid gap-12 md:grid-cols-4">
         <div className="md:col-span-2">
           <Link to="/" className="flex items-center gap-2">
-            <img src={sdcLogo} alt="SDC — Strategic Digital Cognitive" className="h-28 md:h-40 w-auto" />
+            <img src={sdcLogo} alt="SDC — Strategic Digital Cognitive" className="h-36 md:h-52 w-auto" />
           </Link>
           <p className="mt-6 max-w-sm text-sm text-muted-foreground leading-relaxed">
             Strategic Digital Cognitive — powered by a mixture of experts. SAP-native solutions,
