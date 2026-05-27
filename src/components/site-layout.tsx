@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { ArrowUpRight, Menu, X } from "lucide-react";
+import { ArrowUpRight, Menu, X, Linkedin } from "lucide-react";
 import { useState } from "react";
 import sdcLogo from "@/assets/sdc-logo.png";
 
@@ -112,10 +112,20 @@ export function SiteFooter() {
       <div className="border-t border-border">
         <div className="mx-auto max-w-7xl px-6 py-6 flex flex-wrap items-center justify-between gap-4 text-xs text-muted-foreground">
           <div>© {new Date().getFullYear()} SDC. All rights reserved.</div>
-          <div className="flex flex-wrap gap-6">
+          <div className="flex flex-wrap items-center gap-6">
             <a href="mailto:info@sdcnow.com" className="hover:text-foreground">info@sdcnow.com</a>
             <a href="tel:+14087824421" className="hover:text-foreground">+1 (408) 782-4421</a>
             <span>Texas, USA</span>
+            <a
+              href="https://www.linkedin.com/company/sdcnow"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="SDC on LinkedIn"
+              className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/60 px-3 py-1.5 hover:text-foreground hover:border-brand/40 transition"
+            >
+              <Linkedin className="size-4 text-brand" />
+              <span>LinkedIn</span>
+            </a>
           </div>
         </div>
       </div>
