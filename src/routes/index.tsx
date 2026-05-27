@@ -115,7 +115,7 @@ function Home() {
               to="/contact"
               className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/60 backdrop-blur px-7 py-3.5 font-medium hover:bg-surface transition"
             >
-              Get Support
+              Get in Touch
             </Link>
           </div>
 
@@ -250,7 +250,7 @@ function Home() {
                   to="/contact"
                   className="inline-flex items-center gap-2 rounded-full bg-foreground text-background px-7 py-3.5 font-medium hover:opacity-90 transition"
                 >
-                  Get in touch <ArrowUpRight className="size-4" />
+                  Get in Touch <ArrowUpRight className="size-4" />
                 </Link>
                 <a href="mailto:info@sdcnow.com" className="text-muted-foreground hover:text-foreground transition">
                   info@sdcnow.com

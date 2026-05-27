@@ -44,7 +44,7 @@ export function SiteHeader() {
             to="/contact"
             className="hidden sm:inline-flex items-center gap-2 rounded-full bg-foreground text-background px-5 py-2.5 text-sm font-medium hover:opacity-90 transition"
           >
-            Get Support <ArrowUpRight className="size-4" />
+            Get in Touch <ArrowUpRight className="size-4" />
           </Link>
           <button
             type="button"
