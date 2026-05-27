@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { ArrowUpRight, Menu, X } from "lucide-react";
+import { ArrowUpRight, Menu, X, Linkedin } from "lucide-react";
 import { useState } from "react";
 import sdcLogo from "@/assets/sdc-logo.png";
 
