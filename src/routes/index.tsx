@@ -166,7 +166,7 @@ function Home() {
                   </div>
                   <div className="flex items-center gap-3 text-xs uppercase tracking-[0.2em] text-muted-foreground">
                     <Icon className="size-4 text-brand" />
-                    Service
+                    OFFERING
                   </div>
                   <h3 className="mt-6 font-display text-4xl md:text-5xl tracking-tight inline-flex items-center gap-3">
                     {s.name}
