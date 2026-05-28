@@ -31,7 +31,7 @@ export function SiteHeader() {
             <Link
               key={l.to}
               to={l.to}
-              className="hover:text-foreground transition"
+              className="whitespace-nowrap hover:text-foreground transition"
               activeProps={{ className: "text-foreground" }}
               activeOptions={{ exact: true }}
             >
