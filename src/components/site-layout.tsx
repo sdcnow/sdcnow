@@ -22,11 +22,11 @@ export function SiteHeader() {
         href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap"
         rel="stylesheet"
       />
-      <div className="mx-auto max-w-7xl px-6 py-6 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-2">
+      <div className="mx-auto max-w-7xl px-6 py-6 flex items-center justify-between gap-6">
+        <Link to="/" className="flex items-center gap-2 shrink-0">
           <img src={sdcLogo} alt="SDC — Strategic Digital Cognitive" className="h-32 md:h-44 w-auto" />
         </Link>
-        <nav className="hidden lg:flex items-center gap-6 text-sm text-muted-foreground">
+        <nav className="hidden xl:flex items-center gap-5 text-sm text-muted-foreground">
           {navLinks.slice(1, -1).map((l) => (
             <Link
               key={l.to}
@@ -39,17 +39,17 @@ export function SiteHeader() {
             </Link>
           ))}
         </nav>
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 shrink-0">
           <Link
             to="/contact"
-            className="hidden sm:inline-flex items-center gap-2 rounded-full bg-foreground text-background px-5 py-2.5 text-sm font-medium hover:opacity-90 transition"
+            className="hidden sm:inline-flex items-center gap-2 whitespace-nowrap rounded-full bg-foreground text-background px-5 py-2.5 text-sm font-medium hover:opacity-90 transition"
           >
             Get in Touch <ArrowUpRight className="size-4" />
           </Link>
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}
-            className="lg:hidden inline-flex size-10 items-center justify-center rounded-full border border-border bg-surface"
+            className="xl:hidden inline-flex size-10 items-center justify-center rounded-full border border-border bg-surface"
             aria-label="Toggle menu"
           >
             {open ? <X className="size-5" /> : <Menu className="size-5" />}
@@ -57,7 +57,7 @@ export function SiteHeader() {
         </div>
       </div>
       {open && (
-        <div className="lg:hidden border-t border-border bg-surface/80 backdrop-blur">
+        <div className="xl:hidden border-t border-border bg-surface/80 backdrop-blur">
           <div className="mx-auto max-w-7xl px-6 py-6 flex flex-col gap-4 text-sm">
             {navLinks.map((l) => (
               <Link
