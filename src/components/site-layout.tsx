@@ -100,7 +100,7 @@ export function SiteFooter() {
           </ul>
         </div>
         <div>
-          <div className="text-xs uppercase tracking-[0.25em] text-brand">Services</div>
+          <div className="text-xs uppercase tracking-[0.25em] text-brand">OFFERINGS</div>
           <ul className="mt-5 space-y-3 text-sm text-muted-foreground">
             <li><Link to="/strategic-consulting" className="hover:text-foreground">Strategic Consulting</Link></li>
             <li><Link to="/digital-transformation" className="hover:text-foreground">Digital Transformation</Link></li>
